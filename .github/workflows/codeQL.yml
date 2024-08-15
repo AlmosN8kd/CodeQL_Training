@@ -20,7 +20,9 @@ jobs:
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v1
-        uses: github/codeql/codeql-config.yml
+        with: 
+          config-file: .github/codeql/codeql-config.yml
+        # uses: github/codeql/codeql-config.yml
         # uses: github/codeql-action/codeql/codeql-config.yml
         
         
